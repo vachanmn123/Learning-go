@@ -75,6 +75,26 @@ var z uint = uint(f)
 ```
 **NOTE**: Unlike in C, assignment between items of different type requires an explicit conversion.
 
+# For loop:
+There is only one kind of loop in go, it is the `for` loop.
+
+```go
+sum := 0
+for i := 0; i < 10; i++ {
+	sum += i
+	}
+```
+The basic `for` loop has three components separated by semicolons:
+
+the init statement: executed before the first iteration (OPTIONAL)
+the condition expression: evaluated before every iteration
+the post statement: executed at the end of every iteration (OPTIONAL)
+
+if the condition, init, post statements are all skipped, then it becomes infinite loop.
+
+**NOTE**: {} always needed, () around params not allowed. `;` can also be skipped if not using init and post statements.
+
+
 
 # Packages:
 Every Go program is made up of packages.
